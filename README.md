@@ -5,16 +5,13 @@ train a small CNN on **BloodMNIST** (8-class blood-cell microscopy, MedMNIST) us
 The run compares the federated model's global test accuracy against a **centralized baseline**
 (and a **local-only baseline**: one client training alone) and writes a convergence plot.
 
-> **What "privacy-preserving" means here.** Raw images never leave a client; only model weights do.
-> This project does **not** implement differential privacy or secure aggregation, and weight updates
-> can still leak information. Do not describe it as formally private.
 
 ## Repository layout
 
 ```
 fl-medical-imaging/
 ├── README.md
-├── requirements.txt      pinned dependencies (tested versions)
+├── requirements.txt      pinned dependencies 
 ├── pytest.ini
 ├── config.py             ExperimentConfig dataclass (all hyper-parameters)
 ├── utils.py              logging, seeding, device selection, JSON helpers
