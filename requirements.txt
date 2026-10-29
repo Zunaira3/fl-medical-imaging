@@ -1,0 +1,9 @@
+# Tested with Python 3.12. Versions below are the exact ones the code was run against.
+torch==2.15.0
+torchvision==0.29.2
+flwr[simulation]==1.42.0
+numpy==2.5.4
+scikit-learn==1.9.1
+matplotlib==3.11.2
+medmnist==3.0.2
+pytest==9.2.0
